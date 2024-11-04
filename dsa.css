@@ -1,0 +1,75 @@
+body{
+	background-color: lightgrey;
+	color: black;
+}
+
+h1{
+	text-align: center;
+	font-size: 48px;
+	font-family: cooper black;
+}
+
+#div{
+	border: 3px solid black;
+	/* border-width: 2px; */
+	/* border-style: dotted; */
+	/* border-color: red; */
+	border-top-color: white;
+	border-left-color: white;
+	padding: 20px 10px 20px; /* fent, jobb, lent, bal <--- sorrend */
+	box-shadow:inset -3px -3px 7px red;
+}
+
+#doboz{
+	width: 400px;
+	height: 50px;
+	border: 3px solid black;
+	border-top-color: white;
+	border-left-color: white;
+	box-shadow: inset -3px -3px 7px blue;
+	margin: 0px 0px 0px;
+	font-style: italic;
+	text-align: center;
+	font-weight: bold;
+	margin: 10px auto;
+	
+}
+
+img{
+	width:200px;
+	float: right;
+}
+
+.alma{
+	color: red;
+	/* font-weight: bold; */
+}
+
+.korte{
+	color: blue;
+	/* font-weight: bold; */
+}
+
+.alma, .korte{
+	font-weight: bold;
+}
+
+div .korte{
+	font-size: 17px;
+}
+div>.korte{
+	font-family: cooper black;
+	display: block;
+}
+
+div>.alma{
+	display: block;
+}
+
+.belso{
+	display: inherit;
+}
+
+/*
+display: inline, inherit, block, none, initial, inline-block
+*/

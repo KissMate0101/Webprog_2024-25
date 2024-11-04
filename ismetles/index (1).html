@@ -1,0 +1,121 @@
+<!DOCTYPE html>
+<html lang="hu">
+    <head>
+        <title>Ismétlés</title>
+        <meta charset="utf-8">
+		<link rel="sylesheet" href="style.css">
+    </head>
+    <body>
+        <h1>Év eleji ismétlés</h1>
+		
+        <h2>Tartalomjegyzék</h2>
+        <ul>
+            <li><a href="#hh">hiperhivatkozás</a></li>
+            <li><a href="#kepek">képek</a></li>
+            <li><a href="#fel">Felsorolás</a></li>
+            <li><a href="#be">Bekezdés</a></li>
+            <li><a href="#cimsorok">címsorok</a></li>
+        </ul>
+        
+        <h2 id="cimsorok">címsorok használata</h2>
+        <h1>Címsor1</h1>
+        <h2>Címsor2</h2>
+        <h3>Címsor3</h3>
+        <h4>Címsor4</h4>
+        <h5>Címsor5</h5>
+        <h6>Címsor6</h6>
+        
+        <h2 id="be">Bekezdés</h2>
+        <p>
+		Lorem ipsum dolor sit amet, <b>consectetur adipiscing elit</b>. Donec volutpat sem vitae leo ultricies tempus. <strong>Cras ut tempus nisi</strong>. Etiam sit amet dui leo. Duis et nulla justo. <i>Proin porttitor</i> nec augue ut condimentum. Sed sed porta nulla. Maecenas sodales volutpat tempor. Nunc ut rutrum neque. Suspendisse dictus, orci et dignissim aliquam, <em>quam purus cursus turpis</em>, eu suscipit dolor ipsum nec orci. Curabitur et erat arcu. Proin non tortor laoreet, scelerisque ligula ut, <u>dapibus metus</u>. Aenean pharetra sem in est venenatis tincidunt. Sed tincidunt ac <strong>ligula</strong> ut semper. In non hendrerit nisl. Maecenas pharetra felis sit amet neque mollis, a facilisis mauris lobortis. Praesent in libero eget purus placerat efficitur.
+		</p>
+        <p>
+		<span class="">In rhoncus cursus magna sit amet facilisis.</span> Suspendisse congue a magna sed feugiat. Sed cursus leo augue, et vulputate felis hendrerit eget. Curabitur eu magna hendrerit, pulvinar est vitae, pharetra est. Suspendisse eget nulla ut elit tincidunt auctor. Vestibulum rhoncus enim risus, euismod suscipit nibh feugiat consequat. Proin ultrices leo lorem. Nam convallis, lacus a sollicitudin accumsan, justo risus dictum ligula, sed placerat dui erat sed lectus. Pellentesque ultricies dolor a arcu volutpat rhoncus. Aenean lorem lorem, scelerisque accumsan efficitur sed, ullamcorper quis orci. Nullam eu pharetra eros. Mauris sodales dui sem, id elementum diam volutpat vel. Vestibulum ante ipsum primis in faucibus orci luctus et ultrices posuere cubilia curae;
+		</p>
+        
+        <h2 id="fel">Felsorolás</h2>
+        <ul class="felsorolas">
+            <li>szimbólumos lista1</li>
+            <li>szimbólumos lista2</li>
+            <li>szimbólumos lista3</li>
+            <li>szimbólumos lista4</li>
+        </ul>
+
+        <ol type="1">
+            <li>számozott lista1</li>
+            <li>számozott lista2</li>
+
+                <ol type="1" class="felsorolas">
+                    <li>szimbólumos lista1</li>
+                    <li>szimbólumos lista2</li>
+                    <li>szimbólumos lista3</li>
+                    <li>szimbólumos lista4</li>
+                </ol>
+
+            <li>számozott lista3</li>
+            <li>számozott lista4</li>
+        </ol>
+
+        <h2 id="kepek">képek</h2>
+		<a href="H:\prog 11\HTML\tajkép.JFIF">
+		<figure>
+			<img src="H:\prog 11\HTML\tajkép.JFIF" alt="Tálykép" title="Tálykép" width="200">
+			<!-- <figcaption>Tájlép</figcaption> -->
+ 		</figure>
+		</a>
+        
+        <h2 id="hh">hiperhivatkozás</h2>
+        <p>szöveg
+        <a href="https://www.ubisoft.com/en-gb/game/rainbow-six/siege/marketplace?route=home" target="_blank">katt ide</a>
+        <p>
+		
+		<h2>Táblázat</h2>
+		<table border="5">
+		<caption>Tábla neve</caption>
+			<thead>
+			<tr>
+				<td>1. oszlop</td>
+				<td>2. oszlop</td>
+				<td>3. oszlop</td>
+				<td>4. oszlop</td>
+				<td>5. oszlop</td>
+			</tr>
+			</thead>
+			<tbody>
+			<tr text align="center">
+				<td>1</td>
+				<td rowspan="3">2<br></br>7<br></br>12</td>
+				<td>3</td>
+				<td>4</td>
+				<td rowspan="2">5<br></br>10</td>
+			</tr>
+			<tr text align="center">
+				<td>6</td>
+				
+				<td rowspan="2" colspan="2">8 9<br></br>13 14</td>
+			</tr>
+			<tr text align="center">
+				<td rowspan="3">11<br></br>16<br></br>21</td>
+				<td>15</td>
+            </tr>
+			<tr text align="center">
+				
+				<td>17</td>
+				<td>18</td>
+				<td colspan="2">19 20</td>
+				
+			</tr>
+			<tr text align="center" >
+				
+				<td rowspan="2" colspan="3">22 23 24<br></br>27 28 29</td>
+				<td>25</td>
+			</tr>
+			<tr text align="center">
+				<td>26</td>
+				<td>30</td>
+			</tr>
+			
+		</table>
+        <tbody>
+    </body>
+</html>

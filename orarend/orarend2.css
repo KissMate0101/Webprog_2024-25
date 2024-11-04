@@ -1,0 +1,39 @@
+thead{
+	background-color: lightblue;
+}
+
+tbody{
+	background-color: white;
+	color: black;
+	text-align: center;
+}
+
+img{
+	float: right;
+	margin-top: 173px
+	width: 
+}
+
+caption{
+	color: lightblue;
+	font-family: cooper black;
+	font-size: 40px
+}
+
+li{
+	font-family: arial black;
+	list-style-type: square;
+}
+
+h1{
+	color: lightblue;
+	font-family: cooper black;
+	font-size: 50px;
+	text-align: center;
+}
+
+h2{
+	color: lightblue;
+	font-family: cooper black;
+	font-size: 25px
+}
