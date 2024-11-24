@@ -1,12 +1,70 @@
 body{
     text-align: center;
+    background-image: url("kepek/wavy.webp");
+    background-repeat: none;
+    color:white;
 }
 
 h1{
     text-align: center;
+    padding-top: 20px;
+    margin-bottom: 50px;
+    text-decoration: underline;
+    text-shadow: 5px 5px 5px grey;
 }
 
-.as{
+.jobb{
     float: right;
+    margin-right: 20px;
+    margin-bottom: 20px;
 }
 
+.bal{
+    float: left;
+    margin-left: 20px;
+    margin-bottom: 20px;
+}
+
+.bg{
+    background-color: rgba(0, 0, 0, 0.55);
+    width: 500px;
+    text-align: center;
+    margin-left: auto;
+    margin-right: auto;
+    border-radius: 30px;
+    
+}
+
+.jobb, .bal, .kozep{
+    margin-bottom: 25px;
+}
+
+.lb{
+    text-decoration: underline;
+    text-shadow: 5px 5px 5px grey;
+    font-size: larger;
+}
+
+input.z:checked + label {
+    color: green;
+}
+
+input.s:checked + label {
+    color: yellow;
+}
+
+input.p:checked + label {
+    color: pink;
+}
+
+input.k:checked + label {
+    color: blue;
+}
+
+input.r:checked + label {
+    color: red;
+}
+
+.bal :link{
+    color: green;
+}

@@ -5,11 +5,14 @@
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <link rel="stylesheet" href="style.css">
+
+   
     <title>Űrlap</title>
 </head>
 
 <body>
-    <h1>Űrlap használat</h1>
+    <div class="bg">
+        <h1>Űrlap használat</h1>
     <form>
         <p>
             <label>Név: </label>
@@ -24,7 +27,7 @@
             <input type="number" value="2000" min="1904" max="2024">
         </p>
         <p>
-            <label>Legmagasabb iskola végzetség: </label>
+            <label class="lb">Legmagasabb iskola végzetség: </label>
         <p>
             <input type="radio" name="vegzettseg" checked>
             <label>8 általános</label>
@@ -43,7 +46,7 @@
             <input type="radio" name="vegzettseg1">
             <label>8 általános</label>
             <br>
-            <input type="radio" name="vegzettseg1">
+            <input type="radio" name="vegzettseg1" checked>
             <label>Érettségi</label>
             <br>
             <input type="radio" name="vegzettseg1">
@@ -57,39 +60,49 @@
 </body>
 <form>
     <p>
-        <label>Nem: </label>
+        <label class="lb">Nem: </label>
     </p>
     <p>
         <input type="radio" name="nem">
         <label>Férfi</label>
         <br>
-        <input type="radio" name="nem">
-        <label>nő</label>
+        <input id="exampleCheckbox" type="radio" name="nem">
+        <label id="exampleLabel" >Nő</label>
     </p>
     <p>
-        <label>Kedvenc szín: </label>
+        <label class="lb">Kedvenc szín: </label>
     </p>
     <p>
-        <input type="checkbox" value="Zöld">
-        <label>Zöld</label>
+        <input class="z" type="checkbox" value="Zöld">
+        <label >Zöld</label>
         <br>
-        <input type="checkbox" value="Sárga">
+        <input class="s" type="checkbox" value="Sárga">
         <label>Sárga</label>
         <br>
-        <input type="checkbox" value="Pink">
+        <input class="p" type="checkbox" value="Pink">
         <label>Pink</label>
         <br>
-        <input type="checkbox" value="Kék">
+        <input class="k" type="checkbox" value="Kék">
         <label>Kék</label>
         <br>
-        <input type="checkbox" value="Piros">
+        <input class="r" type="checkbox" value="Piros">
         <label>Piros</label>
         <br>
     </p>
-    <input type="button" value="OK" disabled>
-    <input class="kozep" type="submit">
-    <button class="as">Kilépés</button>
-    <input type="reset" value="adatok törlése">
+    
+    <input class="bal" type="submit">
+    <button class="jobb">Kilépés</button>
+    <input class="kozep" type="reset" value="adatok törlése">
 </form>
 
+</div>
+<script>
+    document.getElementById("exampleCheckbox").addEventListener("change", function() {
+    const label = document.getElementById("exampleLabel");
+    if (this.checked) {
+        label.textContent = "Ezeknek nicsenek jogai";
+    } else {
+        label.textContent = "Nő";
+    }});
+</script>
 </html>
