@@ -5,91 +5,144 @@
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <link rel="stylesheet" href="style.css">
+
+
     <title>Űrlap</title>
 </head>
 
 <body>
-    <h1>Űrlap használat</h1>
-    <form>
-        <p>
-            <label>Név: </label>
-            <input type="text" placeholder="Példaszöveg">
-        </p>
-        <p>
-            <label>Email: </label>
-            <input type="text" placeholder="valami@gmail.com">
-        </p>
-        <p>
-            <label>Születési év:</label>
-            <input type="number" value="2000" min="1904" max="2024">
-        </p>
-        <p>
-            <label>Legmagasabb iskola végzetség: </label>
-        <p>
-            <input type="radio" name="vegzettseg" checked>
-            <label>8 általános</label>
-            <br>
-            <input type="radio" name="vegzettseg">
-            <label>Érettségi</label>
-            <br>
-            <input type="radio" name="vegzettseg">
-            <label>Egyetem</label>
-            <br>
-            <input type="radio" name="vegzettseg">
-            <label>Szakma</label>
-            <br>
-        </p>
-        <p>
-            <input type="radio" name="vegzettseg1">
-            <label>8 általános</label>
-            <br>
-            <input type="radio" name="vegzettseg1">
-            <label>Érettségi</label>
-            <br>
-            <input type="radio" name="vegzettseg1">
-            <label>Egyetem</label>
-            <br>
-            <input type="radio" name="vegzettseg1">
-            <label>Szakma</label>
-            <br>
-        </p>
-    </form>
+    <div class="bg">
+        <fieldset class="fields">
+        <h1>Űrlap használat</h1>
+        <form>
+
+        </fieldset>
+            <fieldset class="field">
+                <legend>Szemályes adatok</legend>
+                <p>
+                    <label>Név: </label>
+                    <input type="text" placeholder="Példaszöveg">
+                </p>
+                <p>
+                    <label>Email: </label>
+                    <input type="text" placeholder="valami@gmail.com">
+                </p>
+                <p>
+                    <label>Születési év:</label>
+                    <input type="number" value="2000" min="1904" max="2024">
+                </p>
+                <p>
+                <p>
+                    <label class="lb">Nem: </label>
+                </p>
+                <input type="radio" name="nem">
+                <label>Férfi</label>
+                <br>
+                <input id="exampleCheckbox" type="radio" name="nem">
+                <label id="exampleLabel">Nő</label>
+                </p>
+            </fieldset>
+            <fieldset class="field">
+                <p>
+                    <label class="lb">Legmagasabb iskola végzetség: </label>
+                <p>
+                    <input type="radio" name="vegzettseg" checked>
+                    <label>8 általános</label>
+                    <br>
+                    <input type="radio" name="vegzettseg">
+                    <label>Érettségi</label>
+                    <br>
+                    <input type="radio" name="vegzettseg">
+                    <label>Egyetem</label>
+                    <br>
+                    <input type="radio" name="vegzettseg">
+                    <label>Szakma</label>
+                    <br>
+                </p>
+                <p>
+                    <input type="radio" name="vegzettseg1">
+                    <label>8 általános</label>
+                    <br>
+                    <input type="radio" name="vegzettseg1" checked>
+                    <label>Érettségi</label>
+                    <br>
+                    <input type="radio" name="vegzettseg1">
+                    <label>Egyetem</label>
+                    <br>
+                    <input type="radio" name="vegzettseg1">
+                    <label>Szakma</label>
+                    <br>
+                </p>
+        </form>
 </body>
 <form>
     <p>
-        <label>Nem: </label>
+        <label class="lb">Kedvenc szín: </label>
     </p>
     <p>
-        <input type="radio" name="nem">
-        <label>Férfi</label>
-        <br>
-        <input type="radio" name="nem">
-        <label>nő</label>
-    </p>
-    <p>
-        <label>Kedvenc szín: </label>
-    </p>
-    <p>
-        <input type="checkbox" value="Zöld">
+        <input class="z" type="checkbox" value="Zöld">
         <label>Zöld</label>
         <br>
-        <input type="checkbox" value="Sárga">
+        <input class="s" type="checkbox" value="Sárga">
         <label>Sárga</label>
         <br>
-        <input type="checkbox" value="Pink">
+        <input class="p" type="checkbox" value="Pink">
         <label>Pink</label>
         <br>
-        <input type="checkbox" value="Kék">
+        <input class="k" type="checkbox" value="Kék">
         <label>Kék</label>
         <br>
-        <input type="checkbox" value="Piros">
+        <input class="r" type="checkbox" value="Piros">
         <label>Piros</label>
         <br>
     </p>
-    <input type="button" value="OK" disabled>
-    <input class="kozep" type="submit">
-    <button class="as">Kilépés</button>
-    <input type="reset" value="adatok törlése">
+    </fieldset>
+    <fieldset class="field">
+        <LEGend>Válasszon mindegyikbő egyet</LEGend>
+
+        <label>Kedvenc automárka</label>
+
+        <select size="1" multiple>
+            <option value="Suzuki">Suzuki</option>
+            <option value="BMW">BMW</option>
+            <option value="Ford" selected>Ford</option>
+            <option value="Lada">Lada</option>
+            <option value="Chevrolett">Chevrolett</option>
+        </select>
+
+        <p>
+            <label>Kedvenc zenei stíllus</label>
+
+            <input list="Music">
+            <datalist id="Music">
+                <option value="Hip-Hop">Hip-Hop</option>
+                <option value="Metal">Metal</option>
+                <option value="Classical">Classical</option>
+                <option value="Rap">Rap</option>
+            </datalist>
+        </p>
+    </fieldset>
+    <fieldset class="fieldss">
+        <legend>További véleményed</legend>
+        <textarea row="8" cols="50">ide írja válaszát...</textarea>
+
+        <input class="bal" type="submit">
+        <button class="jobb">Kilépés</button>
+        <input class="kozep" type="reset" value="adatok törlése">
 </form>
+
+</div>
+<script>
+    document.getElementById("exampleCheckbox").addEventListener("change", function () {
+        const label = document.getElementById("exampleLabel");
+        if (this.checked) {
+            label.textContent = "Csak kettő van";
+        }
+        else {
+            label.textContent = "Nő";
+        }
+    });
+</script>
+</fieldset>
 
 </html>
