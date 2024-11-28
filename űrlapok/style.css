@@ -28,7 +28,7 @@ h1{
 
 .bg{
     background-color: rgba(0, 0, 0, 0.55);
-    width: 500px;
+    width: 50%;
     text-align: center;
     margin-left: auto;
     margin-right: auto;
@@ -92,4 +92,17 @@ input.r:checked + label {
 
 legend{
     margin-bottom: 20px;
+}
+
+.textareadiv{
+    margin: auto;
+    width: 80%;
+}
+
+textarea{
+    width: 100%;
+}
+
+#csusz{
+    width: 50%;
 }
