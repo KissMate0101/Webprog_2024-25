@@ -6,6 +6,33 @@ body{
     background-attachment: fixed;
 }
 
+form{
+    width: 50%;
+    margin: auto;
+    font-size: 16px;
+    background-color: rgba(0, 100, 0,0.8);
+    /* border: 2px solid black; */
+    border-top-left-radius: 20px;
+    border-top-right-radius: 20px;
+    text-shadow: ;
+}
+
+#formstyle{
+    background-color: rgba(0, 0, 100, 0.8);
+}
+
+#formstyle{
+    background-color: rgba(255, 230, 0, 0.8) !important;
+}
+
+.formclass{
+    background-color: rgba(255, 0, 0, 0.8);
+}
+
+form.formclass{
+    background-color: rgba(255, 0, 234, 0.8);
+}
+
 h1{
     text-align: center;
     padding-top: 20px;
@@ -26,13 +53,13 @@ h1{
     margin-bottom: 20px;
 }
 
-.bg{
+/* .bg{
     background-color: rgba(0, 0, 0, 0.55);
     width: 50%;
     text-align: center;
     margin-left: auto;
     margin-right: auto;
-    border-radius: 30px;
+    border-radius: 30px; */
     
 }
 
