@@ -126,24 +126,33 @@
         </datalist>
     </p>
 </fieldset>
-<fieldset class="fieldss">
+<fieldset class="field">
     <legend>További véleményed</legend>
     <div class="textareadiv">
         <textarea row="8" cols="50">ide írja válaszát...</textarea>
     </div>
 </fieldset>
 
-<fieldset>
+<fieldset class="field">
     <p>
         <label>Értékelés</label>
         <label>Százalékos értékelés</label>
         <br>
         <input id="csusz" type="range" min="0" max="100">
     </p>
+</fieldset>
+    <fieldset class="fieldss field">
+        <legend>Képek</legend>
+        <img src="kepek/tajkep1.jfif" alt="">
+        <img src="kepek/tajkep2.jfif" alt="">
+        <img src="kepek/tajkep3.jfif" alt="">   
+</fieldset>
+<fieldset class="fieldtop">
     <input class="bal" type="submit">
     <button class="jobb">Kilépés</button>
     <input class="kozep" type="reset" value="adatok törlése">
     </form>
+</fieldset>
     <p id="csuszertek" onchange="Értékkiírat()">
         <script>
             function Értékkiírat() {
@@ -165,6 +174,5 @@
             }
         });
     </script>
-</fieldset>
 
 </html>
