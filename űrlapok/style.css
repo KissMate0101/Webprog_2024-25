@@ -140,3 +140,14 @@ textarea{
 #csusz{
     width: 50%;
 }
+
+.fieldimg{
+    display: flex;
+    flex-direction: row-reverse;
+    /* flex-wrap: wrap-reverse; */
+    justify-content: space-between;
+}
+
+img{
+    max-width: 130px;
+}
