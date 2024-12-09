@@ -42,3 +42,9 @@ body{
     grid-row-end: -2;
     grid-area: 1/1/1/5;
 }
+
+#div1 .green{
+
+}
+
+#div1 .blue{}

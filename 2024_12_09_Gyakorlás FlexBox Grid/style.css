@@ -1,0 +1,60 @@
+body{
+    background-color: white;
+    color:white;
+}
+
+.navi{
+    background-color: black;
+    border: 1px solid black;
+    display: flex;
+    justify-content: space-around;
+}
+
+.div1{
+    background-color: black;
+    border: 2px solid black;
+    text-align: center;
+}
+
+.div2{
+    background-color: black;
+    border: 2px solid black;
+    text-align: center;
+}
+
+.div3{
+    background-color: black;
+    border: 2px solid black;
+    text-align: center;
+}
+
+.navi .div1{
+    grid-row: 1/3;
+    grid-column: 2/4;
+}
+
+.termekek img{
+    width: 100px;
+    height: 100px;
+}
+
+.termekek{
+    display: grid;
+    grid-template-columns: 20% 20% 20% 20%;
+    grid-template-rows: 20% 20% 20% 20%;
+    margin: 15px;
+}
+
+.terbelso{
+    display: grid;
+    background-color: lightgray;
+    justify-content: space-around;
+    color: black;
+}
+
+.footer{
+    background-color: black;
+    border: 1px solid black;
+    display: flex;
+    justify-content: space-around;
+}
