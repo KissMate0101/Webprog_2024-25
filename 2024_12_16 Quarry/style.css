@@ -2,20 +2,35 @@ body{
     background-color: lightgray;
 }
 
-/* @media(min-width: 768px){
+.container{
+    display: grid;
+    grid-template-columns: auto auto auto;
+}
+.left{
+    background-color: rgba(76, 76, 201, 0.63);
+}
+.right{
+    background-color: rgba(12, 221, 221, 0.616);
+}
+.center{
+    border: 1px solid black;
+}
+
+/*Képernyő szélességére nézve*/
+/* @media (min-width: 768px){
     body{
-        background-color: rgb(219, 166, 122);
+        background-color: green;
     }
 } */
 
-@media(max-width: 768px){
+@media (max-width: 768px){
     body{
-        background-color: rgb(219, 166, 122);
+        background-color: green;
     }
     .container{
         grid-template-columns: 50% 50%;
     }
-    .jobb{
+    .right{
         grid-column: span 2;
     }
 }
@@ -24,7 +39,7 @@ body{
     .container{
         grid-template-columns: 1fr;
     }
-    .jobb{
+    .right{
         grid-column: span 1;
     }
 }

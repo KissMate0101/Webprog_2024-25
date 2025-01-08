@@ -1,0 +1,75 @@
+body{
+    background-color: beige;
+}
+
+h1{
+    text-align: center;
+}
+
+h2{
+    margin-left: 200px;
+}
+
+div{
+    background-color: burlywood;
+    border: 1px solid black;
+    width: 100px;
+    height: 60px;
+    display: inline-block;
+    margin: 3vw;
+}
+
+/*Forgatás*/
+
+.forg1{
+    border-radius: 10px 0px 0px 0px;
+    transform: rotate(-60deg); /*z - tengely*/
+}
+
+.forg2{
+    border-radius: 10px 0px 0px 0px;
+    transform: rotate(0.16turn); /*z - tengely*/
+}
+
+.forg3{
+    border-radius: 10px 0px 0px 0px;
+    transform: rotateY(60deg); /*y - tengely*/
+}
+
+/*Nagyítás*/
+
+.nagy1{
+    transform: scale(1.5);
+}
+
+.nagy1:hover{
+    transform: scale(1.7);
+}
+
+.nagy2{
+    transform: scale(0.5);
+}
+
+.nagy2:hover{
+    transform: scale(0.7);
+}
+
+.nagy3{
+    transform: scale(10%);
+}
+
+.nagy3:hover{
+    transform: scale(500%);
+}
+
+.eltolas1{
+    transform: translate(30px, -30px);
+}
+
+.eltolas2{
+    transform: translate(20px, 1vw);
+}
+
+.eltolas3{
+    transform: translate(30px, -100px);
+}
