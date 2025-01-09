@@ -1,0 +1,54 @@
+.navi{
+    background-color: rgba(0, 0, 0, 0.7);
+    display: flex;
+    justify-content: space-around;
+    height: 50px;
+    border-radius: 10px;
+    border: 2px solid white;
+}
+
+.navi a{
+    color: white;
+    text-decoration: none;
+    margin: auto;
+    padding: 15px;
+    width: 33%;
+    text-align: center;
+}
+
+.navi a:hover{
+    color: white;
+    text-decoration: underline;
+    text-decoration-thickness: 2.5px;
+    background-color: rgba(0, 0, 0, 30%);
+    border-radius: 10px;
+    letter-spacing: 2.5px;
+    text-shadow: 5px 5px 7px black;
+    transition: background-color 1.5s, text-shadow 1s, letter-spacing 1s, text-decoration 4s;
+}
+
+.rotate{
+    width: 250px;
+    height: 100px;
+    background-color: grey;
+    margin-top: 100px;
+    margin-left: auto;
+    margin-right: auto;
+    position: relative;
+    border-radius: 20px;
+}
+
+.rotate a{
+    position: absolute;
+    top: 50%;
+    left: 50%;
+    transform: translate(-50%, -50%);
+    color: white;
+    text-decoration: none;
+    font-size: 30px;
+}
+
+.rotate:hover{
+    transform: rotate(3turn);
+    transition: transform 5s;
+}

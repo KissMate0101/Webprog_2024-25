@@ -4,10 +4,12 @@ body{
 
 h1{
     text-align: center;
+    margin-bottom: 60px;
 }
 
 h2{
-    margin-left: 200px;
+    margin-left: 50px;
+    margin-top: 45px;
 }
 
 div{
@@ -17,23 +19,40 @@ div{
     height: 60px;
     display: inline-block;
     margin: 3vw;
+    
 }
+
+@keyframes example {
+    0%   {background-color:red; left:0px; top:0px;}
+    25%  {background-color:yellow; left:200px; top:0px;}
+    50%  {background-color:blue; left:200px; top:200px;}
+    75%  {background-color:green; left:0px; top:200px;}
+    100% {background-color:red; left:0px; top:0px;}
+  }
 
 /*Forgatás*/
 
 .forg1{
     border-radius: 10px 0px 0px 0px;
-    transform: rotate(-60deg); /*z - tengely*/
 }
 
-.forg2{
+.forg1:hover{
+    transform: rotate(-60deg); /*z - tengely*/
+    animation: name 3s none none none reverse none;
+}
+
+.forg2:hover{
     border-radius: 10px 0px 0px 0px;
-    transform: rotate(0.16turn); /*z - tengely*/
+    transform: rotate(2000turn); /*z - tengely*/
+    transition: transform 3s;
 }
 
 .forg3{
     border-radius: 10px 0px 0px 0px;
     transform: rotateY(60deg); /*y - tengely*/
+    animation-name: example;
+    animation-duration: 4s;
+    animation-iteration-count: 1000000;
 }
 
 /*Nagyítás*/
@@ -60,6 +79,7 @@ div{
 
 .nagy3:hover{
     transform: scale(500%);
+    transition: border-radius 3s, transform 2s, box-shadow 3s, background-color 3s;
 }
 
 .eltolas1{
@@ -72,4 +92,54 @@ div{
 
 .eltolas3{
     transform: translate(30px, -100px);
+}
+
+.ferd1{
+    transform: skew(-50deg);
+}
+
+.ferd2{
+    transform: skew(50deg);
+}
+
+.ferd3{
+    transform: skew(-35deg);
+    float:  left;
+}
+
+.ferd4{
+    transform: skew(35deg);
+}
+
+.ferd5{
+    transform: skew(-50deg);
+}
+
+.kph1{
+    transform-origin: top;
+    transform: scale(0.7);
+}
+
+.kph2{
+    transform-origin:bottom;
+    transform: scale(0.3);
+}
+
+.kph3{
+    transform-origin: top right;
+    transform: scale(1.5);
+}
+
+.kiv1{
+    margin-left: 150px;
+    position: relative;
+}
+
+.kiv1 a{
+    position: absolute;
+    top: 50%;
+    left: 50%;
+    background-color: orange;
+    color: beige;
+    transform: translate(-50%, -50%);
 }
