@@ -1,0 +1,334 @@
+body{
+    color: rgb(9, 4, 66);
+    background-color: white;
+}
+
+.tarifa{
+    font-weight: lighter;
+    font-family: Helvetica;
+    letter-spacing: 1.5px;
+    margin-left: 60px;
+    margin-top: 30px;
+}
+
+*{
+  font-family: Helvetica;
+}
+
+.tarifafo{
+  margin-left: 30px;
+}
+
+.valasz{
+  margin-left: 30px;
+}
+
+.primetar{
+    font-weight: bold;
+    margin-left: 25px;
+    margin-top: 25px;
+}
+
+.korlatlan{
+    margin-left: 25px;
+    font-size: 12px;
+}
+
+.ar{
+    margin-left: 25px;
+    margin-top: 110px;
+    font-size: 30px;
+    position: relative;
+}
+
+.ar:before{
+  content: "Akár havi";
+  position: absolute;
+  font-size: 0.4em;
+  color: rgb(9, 4, 66);
+  top: -1em;
+}
+
+.ar:after{
+    content: "-tól";
+    position: absolute;
+    font-size: 0.4em;
+    color: rgb(9, 4, 66);
+    top: 1em;
+}
+
+.arr{
+  margin-left: 25px;
+  margin-top: 110px;
+  font-size: 30px;
+  position: relative;
+}
+
+.arr:before{
+content: "Akár havi";
+position: absolute;
+font-size: 0.4em;
+color: rgb(9, 4, 66);
+top: -1em;
+}
+
+.arr:after{
+  content: "-tól";
+  position: absolute;
+  font-size: 0.4em;
+  color: rgb(9, 4, 66);
+  top: 1em;
+}
+
+h1{
+    font-weight: bolder;
+    font-family: Helvetica;
+}
+
+.tarifagomb{
+    padding:15px;
+    background-color: white;
+    border: 2px solid rgb(6, 0, 85);
+    border-radius: 30px;
+    font-weight: bold;
+    font-family: Helvetica;
+    cursor: pointer;
+    margin-left: 30px;
+    margin-bottom: 60px;
+}
+
+.container{
+  display: grid;
+  grid-template-columns: 1fr 1fr;
+  gap: 15px;
+  justify-content: space-evenly;
+  overflow: scroll;
+  overflow-y: hidden;
+}
+
+.belsocontainer1{
+    display: grid;
+    grid-template-columns:40% 60%;
+    grid-auto-flow: dense;
+    background-color: #B4FF00;
+    color: rgb(9, 4, 66);
+    width: 100%;
+    height: 100%;
+    min-height: 80%;
+    min-width: 100%;
+    margin-top: 60px;
+    margin-left: 30px;
+    border-radius: 10px;
+    order: 1;
+}
+
+.belsocontainer2{
+  display: grid;
+  grid-template-columns:40% 60%;
+  background-color: #B4FF00;
+  color: rgb(9, 4, 66);
+  width: 100%;
+  height: 100%;
+  min-height: 80%;
+  min-width: 100%;
+  margin-top: 60px;
+  margin-left: 30px;
+  margin-right: 100px;
+  border-radius: 10px;
+  order:1;
+}
+  
+.baljobb{
+  width: 100%;
+  height: 100%;
+  min-width: 100%;
+  min-height: 100%;
+  background-image: url('prime.png');
+  background-size: cover;
+  background-position: center;
+  order:2;
+}
+
+.jobbjobb{
+  width: 100%;
+  height: 100%;
+  min-width: 100%;
+  min-height: 100%;
+  background-image: url('yettel.png');
+  background-size: cover;
+  background-position: center;
+  min-width: 300px;
+  order:2;
+}
+
+.ajanlatok{
+  margin-top: 100px;
+  background-color: rgb(228, 252, 255);
+  margin-left :-5px;
+  margin-right :-5px;
+}
+
+.ajanl{
+  font-weight: lighter;
+  font-family: Helvetica;
+  letter-spacing: 1.5px;
+  margin-left: 100px;
+  padding-top: 80px;
+}
+
+.ismerd{
+  margin-left: 70px;
+  padding-bottom: 100px;
+}
+
+.ajanlagomb{
+    padding:15px;
+    background-color: rgba(0, 0, 0, 0%);
+    border: 2px solid rgb(6, 2, 59);
+    border-radius: 30px;
+    font-weight: bold;
+    font-family: Helvetica;
+    cursor: pointer;
+    margin-left: 30px;
+}
+
+.otg{
+  background: rgb(69,181,194);
+  background: linear-gradient(180deg, rgba(69,181,194,1) 0%, rgba(153,189,210,1) 48%, rgba(174,194,204,1) 100%);
+  width: 100%;
+  border-radius: 15px;
+}
+
+.otg > h1{
+  margin-left:15px;
+  padding-top: 50px;
+  font-size: 25px;
+  color: rgb(7, 1, 51);
+}
+
+.otg > p{
+  margin-left:15px;
+  padding-top: 20px;
+  font-size: 20px;
+  letter-spacing: 1.2px;
+}
+
+.otg .ajanlagomb{
+  margin-top: 185px;
+  margin-bottom: 40px;
+}
+
+.tv{
+  background: rgb(44,213,0);
+  background: linear-gradient(180deg, rgba(44,213,0,1) 0%, rgba(148,189,82,1) 48%, rgba(186,217,97,1) 100%);
+  width: 100%;
+  border-radius: 15px;
+}
+
+.tv > h1{
+  margin-left:15px;
+  padding-top: 50px;
+  font-size: 25px;
+  color: rgb(7, 1, 51);
+}
+
+.tv > p{
+  margin-left:15px;
+  padding-top: 20px;
+  font-size: 20px;
+  letter-spacing: 1.2px;
+}
+
+.tv .ajanlagomb{
+  margin-top: 186px;
+}
+
+.wifi{
+  background: rgb(2,0,36);
+  background: linear-gradient(180deg, rgba(2,0,36,1) 0%, rgba(26,26,65,1) 48%, rgba(3,99,119,1) 100%);
+  color: white;
+  width: 100%;
+  margin-right: 15px;
+  border-radius: 15px;
+}
+
+.wifi > h1{
+  margin-left:15px;
+  padding-top: 50px;
+  font-size: 25px;
+  color: rgb(7, 1, 51);
+  color: white;
+}
+
+.wifi > p{
+  margin-left:15px;
+  padding-top: 20px;
+  font-size: 20px;
+  letter-spacing: 1.2px;
+}
+
+.wifi .ajanlagomb{
+  margin-top: 180px;
+  color: rgb(168, 211, 112);
+  border-color: rgb(168, 211, 112);
+}
+
+.containerajanl{
+  display: grid;
+  gap: 70px;
+  grid-template-columns: repeat(3, 1fr);
+}
+
+@media (max-width: 900px){
+  .belsocontainer1{
+      grid-template-columns: 100%;
+      order: 2;
+  }
+  .belsocontainer2{
+      grid-template-columns: 100%;
+      order: 1;
+  }
+  .korlatlan{
+    margin-left: 25px;
+    font-size: 20px;
+}
+  .baljobb{
+    height: 300px;
+    order: 2;
+  }
+  .jobbjobb{
+    height: 300px;
+    order: 1;
+  }
+}
+
+@media (max-width: 900px){
+  .containerajanl{
+      grid-template-columns: 1fr;
+  }
+  .otg{
+      min-width: 97%;
+      height: 100%;
+      margin: 15px;
+  }
+  .otg .ajanlagomb{
+    transform: scale(1.3);
+  }
+  .tv{
+      min-width: 97%;
+      height: 100%;
+      margin: 15px;
+  }
+  .tv .ajanlagomb{
+    transform: scale(1.3);
+  }
+  .wifi{
+      min-width: 97%;
+      height: 100%;
+      margin: 15px;
+  }
+  .wifi .ajanlagomb{
+    transform: scale(1.3);
+  }
+
+}

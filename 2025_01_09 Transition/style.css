@@ -1,0 +1,90 @@
+nav{
+    background-color: rgba(0, 0, 0, 0.7);
+    display: flex;
+    justify-content: space-around;
+    height: 50px;
+    border-radius: 10px;
+    border: 2px solid white;
+    margin-bottom: 50px;
+}
+
+nav a{
+    color: white;
+    text-decoration: none;
+    margin: auto;
+    padding: 15px;
+    width: 33%;
+    text-align: center;
+    position: relative;
+}
+
+nav a:hover{
+    color: white;
+    text-decoration: none;
+    text-decoration-thickness: 2.5px;
+    background-color: rgba(0, 0, 0, 30%);
+    border-radius: 10px;
+    letter-spacing: 2.5px;
+    text-shadow: 5px 5px 7px black;
+    transition: background-color 1.5s, text-shadow 1s, letter-spacing 1s, text-decoration 4s;
+}
+
+nav a:before{
+    content: "";
+    height: 2px;
+    width: calc(100% - 2em);
+    position: absolute;
+    background-color: skyblue;
+    font-size: 0.6em;
+    bottom: 1em;
+    left: 1em;
+    transform: scaleX(0);
+    /* transform-origin: right; */
+    transition: transform 1.5s;
+}
+
+nav a:hover:before{
+    transform: scaleX(1);
+    /* transform-origin: left; */
+}
+
+nav a:after{
+    content: " Szöveget tesz utánna";
+    font-size: 0.6em;
+}
+
+.rotate{
+    width: 250px;
+    height: 100px;
+    background-color: grey;
+    margin-top: 100px;
+    margin-left: auto;
+    margin-right: auto;
+    position: relative;
+    border-radius: 20px;
+}
+
+.rotate a{
+    position: absolute;
+    top: 50%;
+    left: 50%;
+    transform: translate(-50%, -50%);
+    color: white;
+    text-decoration: none;
+    font-size: 30px;
+}
+
+.rotate:hover{
+    transform: rotate(3turn);
+    transition: transform 5s;
+}
+
+ul li:nth-child(odd){
+    background-color: lightblue;
+    padding: 5px;
+}
+
+ul li{
+    background-color: skyblue;
+    padding: 5px;
+}

@@ -1,16 +1,53 @@
 body{
     text-align: center;
     background-image: url("kepek/wavy.webp");
+<<<<<<< HEAD
     background-repeat: none;
     color:white;
+=======
+    background-repeat: no-repeat;
+    color:white;
+    background-attachment: fixed;
+>>>>>>> 1d8929a54b65a2b24f1b4ecbe41449420c70a04b
 }
+
+form{
+    /* width: 50%;
+    margin: auto;
+    font-size: 16px;
+    background-color: rgba(0, 100, 0,0.8);
+    border: 2px solid black; 
+    border-top-left-radius: 20px;
+    border-top-right-radius: 20px; */
+    text-shadow: 5px -5px 5px black;
+}
+
+/* #formstyle{
+    background-color: rgba(0, 0, 100, 0.8);
+}
+
+#formstyle{
+    background-color: rgba(255, 230, 0, 0.8) !important;
+}
+
+.formclass{
+    background-color: rgba(255, 0, 0, 0.8);
+}
+
+form.formclass{
+    background-color: rgba(255, 0, 234, 0.8);
+} */
 
 h1{
     text-align: center;
     padding-top: 20px;
     margin-bottom: 50px;
     text-decoration: underline;
+<<<<<<< HEAD
     text-shadow: 5px 5px 5px grey;
+=======
+    text-shadow: 5px 5px 5px blue, -5px -3px 3px rgb(255, 255, 255);
+>>>>>>> 1d8929a54b65a2b24f1b4ecbe41449420c70a04b
 }
 
 .jobb{
@@ -27,7 +64,11 @@ h1{
 
 .bg{
     background-color: rgba(0, 0, 0, 0.55);
+<<<<<<< HEAD
     width: 500px;
+=======
+    width: 50%;
+>>>>>>> 1d8929a54b65a2b24f1b4ecbe41449420c70a04b
     text-align: center;
     margin-left: auto;
     margin-right: auto;
@@ -39,6 +80,15 @@ h1{
     margin-bottom: 25px;
 }
 
+<<<<<<< HEAD
+=======
+legend{
+    text-decoration: underline;
+    text-shadow: 5px 5px 5px grey;
+    font-size: larger;
+}
+
+>>>>>>> 1d8929a54b65a2b24f1b4ecbe41449420c70a04b
 .lb{
     text-decoration: underline;
     text-shadow: 5px 5px 5px grey;
@@ -67,4 +117,56 @@ input.r:checked + label {
 
 .bal :link{
     color: green;
+<<<<<<< HEAD
+=======
+}
+
+fieldset{
+    box-shadow: inset 5px -5px 5px black;
+}
+
+.field{
+    border-bottom: none;
+    margin-top: -10px;
+}
+
+.fields{
+    border-bottom: none;
+    border-radius:30px 30px 0px 0px;
+   
+}
+.fieldss{
+    margin-top: -10px;
+}
+.fieldtop{
+    border-top: none;
+}
+
+legend{
+    margin-bottom: 20px;
+}
+
+.textareadiv{
+    margin: auto;
+    width: 80%;
+}
+
+textarea{
+    width: 100%;
+}
+
+#csusz{
+    width: 50%;
+}
+
+.fieldimg{
+    display: flex;
+    flex-direction: row-reverse;
+    /* flex-wrap: wrap-reverse; */
+    justify-content: space-between;
+}
+
+img{
+    max-width: 130px;
+>>>>>>> 1d8929a54b65a2b24f1b4ecbe41449420c70a04b
 }
