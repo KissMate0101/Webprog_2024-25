@@ -1,0 +1,64 @@
+body{
+    color: rgb(9, 4, 66);
+    background-color: white;
+}
+
+h2{
+    font-weight: lighter;
+    font-family: Helvetica;
+    letter-spacing: 1.5px;
+}
+
+h1{
+    font-weight: bolder;
+    font-family: Helvetica;
+}
+
+.tarifagomb{
+    padding:15px;
+    background-color: white;
+    border: 2px solid rgb(6, 0, 85);
+    border-radius: 30px;
+    font-weight: bold;
+    font-family: Helvetica;
+    cursor: pointer;
+}
+
+.container {
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    width: 100%;
+    height: 300px;
+    background-color: #002147;
+    color: white;
+  }
+  
+  .text-section {
+    flex: 1;
+    background-color: #c8ff00;
+    padding: 20px;
+    color: #002147;
+    font-family: Arial, sans-serif;
+  }
+  
+  .image-section {
+    flex: 1;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    background-color: transparent;
+  }
+  
+  .image-section img {
+    max-width: 80%;
+    height: auto;
+  }
+  
+  .price {
+    margin-top: 20px;
+    font-size: 1.2em;
+    color: #002147;
+    font-weight: bold;
+  }
+  
