@@ -1,0 +1,95 @@
+.meg{
+    margin-left: 50px;
+    margin-top: 15px;
+}
+
+h1{
+    margin-left: 50px;
+    margin-top: 100px;
+    text-decoration: underline;
+}
+
+.megjelenes{
+    width: 100px;
+    height: 100px;
+    background-color: skyblue;
+    margin-top: 50px;
+    margin-left: 50px;
+    border-radius: 15px;
+    animation-name: lathatosag;
+    animation-duration: 5s;
+}
+
+.mozgatas{
+    width: 100px;
+    height: 100px;
+    background-color: skyblue;
+    margin-top: 50px;
+    margin-left: 50px;
+    border-radius: 15px;
+    animation-name: mozgatas;
+    animation-duration: 3s;
+}
+
+.forgas{
+    width: 100px;
+    height: 100px;
+    background-color: skyblue;
+    margin-top: 50px;
+    margin-left: 50px;
+    border-radius: 5px;
+    animation-name: forgatas;
+    animation-duration: 2s;
+    animation-timing-function: linear;
+    animation-iteration-count: infinite;
+}
+.forgas2{
+    width: 100px;
+    height: 100px;
+    background-color: blue;
+    margin-top: 50px;
+    border-radius: 5px;
+    transform: rotate(45deg);
+}
+
+.forgas3{
+    width: 50px;
+    height: 50px;
+    background-color: skyblue;
+    border-radius: 5px;
+    margin-left: auto;
+    margin-right: auto;
+    margin-top: auto;
+    margin-bottom: auto;
+    transform: rotate(90deg);
+}
+
+@keyframes lathatosag{
+    from{
+        opacity: 0%;
+    }
+    to{ 
+        opacity: 100%;
+    };
+}
+
+@keyframes mozgatas{
+    0%{
+        transform: translate(0px);
+    }
+    50%{ 
+        transform: translateX(500px);
+    };
+    100%{
+        transform: translate(0px);
+    }
+}
+
+@keyframes forgatas{
+    0%{
+        transform: rotate(0deg);
+    }
+    100%{
+        transform: rotate(360deg);
+    } 
+}
