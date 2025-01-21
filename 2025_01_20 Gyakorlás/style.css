@@ -48,4 +48,16 @@ h2{
     text-align: center;
 }
 
-@media 
+@media (max-width: 992px){
+    .kepekdiv{
+        grid-template-columns: auto auto;
+        grid-row: 2;
+    }
+}
+
+@media (max-width: 768px){
+    .kepekdiv{
+        grid-template-columns: auto;
+        grid-row: 4;
+    }
+}
