@@ -8,6 +8,34 @@ body{
     text-align: center;
 }
 
+.header img{
+    width: 100px;
+    height: 50px;
+    transform: rotate3d(180deg);
+    transition: 3s;
+    animation-name: mozgatas;
+    animation-duration: 5s;
+    animation-iteration-count: infinite;
+    border-radius: 10px;
+    box-shadow: 0px 0px 5px 5px white;
+    margin-bottom: 15px;
+}
+
+@keyframes mozgatas{
+    0%{
+        transform: translate(-300px);
+    }
+    50%{ 
+        transform: translateX(300px) rotateY(180deg);
+    };
+    75%{
+        transform: translateX(300px)rotateY(180deg);
+    }
+    100%{
+        transform: translate(-300px);
+    }
+}
+
 h1{
     font-size: 60px;
     padding-top: 30px;
@@ -31,23 +59,30 @@ h2{
 
 .kutya1{
     background-color: white;
-    border-radius: 20px;
+    border-radius: 7% 7% 7% 7%;
 }
 
 .kutya1 p{
-    font-size: 20px;
+    font-size: 25px;
     font-weight: bold;
     text-align: center;
+    letter-spacing: 1px;
 }
 
 .kutya1:hover{
     transform: scale(1.07);
+    transition: 0.5s;
 }
 
 .kutya1 img{
     width: 100%;
     height: 80%;
-    border-radius: 10% 10% 0% 0%;
+    border-radius: 7% 7% 0% 0%;
+}
+
+.kutya1:hover p{
+    transform: scale(0.93);
+    transition: 0.5s;
 }
 
 .footer{
@@ -59,6 +94,13 @@ h2{
 .vakeger{
     font-size: 17px;
     padding-top: 15px;
+}
+
+@media (min-width: 992px){
+    .kutya1 p{
+        margin-top: 10px;
+        font-size: 22px;
+    }
 }
 
 @media (max-width: 992px){
