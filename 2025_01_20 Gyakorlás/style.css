@@ -6,6 +6,8 @@ body{
     background-color: rgb(80, 155, 62);
     color: white;
     text-align: center;
+    margin-right: -10px;
+    margin-left: -10px;
 }
 
 h1{
@@ -26,14 +28,13 @@ h1{
 .header img{
     width: 100px;
     height: 50px;
-    transform: rotate3d(180deg);
-    transition: 3s;
     animation-name: mozgatas;
     animation-duration: 5s;
     animation-iteration-count: infinite;
     border-radius: 10px;
     box-shadow: 0px 0px 5px 5px white;
     margin-bottom: 15px;
+    animation-timing-function: linear;
 }
 
 @keyframes mozgatas{
@@ -65,13 +66,14 @@ h2{
 .kepekdiv{
     display: grid;
     grid-template-columns: auto auto auto auto;
-    margin: 15px 0px 15px 0px;
+    margin: 15px;
     gap: 15px;
 }
 
 .kutya1{
     background-color: white;
     border-radius: 7% 7% 7% 7%;
+    box-shadow: 2px 2px 5px 0px;
 }
 
 .kutya1 p{
@@ -102,6 +104,9 @@ h2{
     background-color: rgb(80, 155, 62);
     color: white;
     text-align: center;
+    padding-top: 10px;
+    margin-right: -10px;
+    margin-left: -10px;
 }
 
 .info{
