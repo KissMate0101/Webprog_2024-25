@@ -137,7 +137,7 @@ nav ul {
     justify-content: space-evenly;
 }
 
-nav a {
+nav ul li {
     animation-name: megjelenes;
     animation-duration: 1s;
 }
@@ -155,22 +155,20 @@ nav a {
     }
 }
 
+/* Menü linkek áttűnés */
+
 nav ul li a:hover {
     background-color: rgba(255, 165, 0, 0.2);
     letter-spacing: 2px;
     transition: 0.5s;
 }
 
-
-/* Menü linkek áttűnés */
-
-
-
-
 /* ------------------------------------------------------------------- */
 /* Értékelés formázása */
 
-
+#ertekeles{
+    
+}
 
 
 /* Értékelés animáció */
