@@ -1,0 +1,26 @@
+nav{
+    background-color: rgb(201, 201, 201);
+    margin: -10px;
+    width: 110%;
+}
+
+nav img{
+    vertical-align:middle;
+    width: 2em;
+}
+
+nav a{
+    text-decoration: none;
+    color:black
+}
+
+nav a span{
+    vertical-align:middle;
+}
+
+nav input{
+    margin-left: 50px;
+    padding: 15px;
+    border: none;
+    border-radius: 25px;
+}
