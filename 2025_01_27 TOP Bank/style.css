@@ -1,26 +1,81 @@
-nav{
-    background-color: rgb(201, 201, 201);
-    margin: -10px;
-    width: 110%;
+img#logo {
+    height: 1.5em;
+    vertical-align: middle;
 }
 
-nav img{
-    vertical-align:middle;
-    width: 2em;
-}
-
-nav a{
+nav a {
     text-decoration: none;
-    color:black
+    color: black;
 }
 
-nav a span{
-    vertical-align:middle;
+nav a span {
+    vertical-align: middle;
 }
 
-nav input{
+nav {
+    display: flex;
+    flex-wrap: wrap;
+    gap: 2em;
+}
+
+div#kereses {
+    flex-grow: 1;
+    border: 2px solid black;
+    border-radius: 20px;
+    justify-content: space-between;
+    display: flex;
+}
+
+#kereses button {
+    background-color: white;
+    border: none;
+    border-radius: 20px;
+    margin-right: 5px;
+}
+
+#kereses input {
+    border: none;
+    outline: none;
+    border-radius: 20px;
+    padding: 0.5em;
+}
+.gomb{
+    background-color: rgb(26, 187, 20);
+    color: white;
     margin-left: 50px;
     padding: 15px;
     border: none;
-    border-radius: 25px;
+    border-radius: 25px 0px 0px 25px;
+    width: 100%;
+    font-size: 15px;
+}
+
+.gomb2{
+    background-color: rgb(26, 187, 20) ;
+    color: white;
+    padding-left: 15px;
+    padding-right: 15px;
+    margin-left: 1px;
+    border: none;
+    border-radius: 0px 25px 25px 0px;
+}
+
+.gomb2:hover{
+    background-color: rgb(12, 141, 1);
+    transition: 0.5s;
+}
+
+.gomb2 img{
+    width: 25px;
+    height: 25px;
+}
+
+.gomb2:hover img{
+    transform: rotateX(180deg);
+    transition: 1s;
+}
+
+.zold{
+    display: flex;
+    flex-grow: 1;
 }
