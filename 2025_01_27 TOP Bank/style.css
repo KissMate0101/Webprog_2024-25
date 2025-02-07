@@ -1,21 +1,27 @@
 img#logo {
-    height: 1.5em;
+    height: 2.5em;
     vertical-align: middle;
 }
 
 nav a {
+    display: flex;
+    align-items: center;
     text-decoration: none;
     color: black;
+    margin-left: 30px;
+    margin-top: 60px;
 }
 
 nav a span {
     vertical-align: middle;
+    font-size: 1.2em;
 }
 
 nav {
     display: flex;
     flex-wrap: wrap;
     gap: 2em;
+    background-image: url(images/piggy-bank.jpg);
 }
 
 div#kereses {
@@ -24,21 +30,28 @@ div#kereses {
     border-radius: 20px;
     justify-content: space-between;
     display: flex;
+    margin-top: 60px;
 }
 
 #kereses button {
     background-color: white;
     border: none;
-    border-radius: 20px;
+    border-radius: 0px 20px 20px 0px;
     margin-right: 5px;
 }
 
 #kereses input {
     border: none;
     outline: none;
-    border-radius: 20px;
+    border-radius: 20px 0px 0px 20px;
     padding: 0.5em;
+    width: 120%;
 }
+
+div#kereses:has(input:focus){
+    border-color: green;
+}
+
 .gomb{
     background-color: rgb(26, 187, 20);
     color: white;
@@ -68,14 +81,48 @@ div#kereses {
 .gomb2 img{
     width: 25px;
     height: 25px;
+    display: flex;
+    align-items: center;
 }
 
 .gomb2:hover img{
     transform: rotateX(180deg);
-    transition: 1s;
+}
+
+.gomb2 img{
+    transition: 0.5s;
 }
 
 .zold{
     display: flex;
     flex-grow: 1;
+    margin-right: 30px;
+    margin-top: 60px;
+}
+
+.malac{
+    margin-top: 100px;
+    margin-left: 30px;
+}
+
+.malac h1{
+    font-family: 'Franklin Gothic Medium', 'Arial Narrow', Arial, sans-serif;
+    font-size: 2.5em;
+    margin-bottom: -5px;
+}
+
+.malac h2{
+    font-family: 'Franklin Gothic Medium', 'Arial Narrow', Arial, sans-serif;
+}
+
+.megnezem{
+    background-color: rgb(252, 113, 0);
+    color: white;
+    padding: 20px;
+    border: none;
+    border-radius: 25px;
+    width: 50%;
+    font-size: 15px;
+    margin-bottom: 70px;
+    margin-top: 20px;
 }
